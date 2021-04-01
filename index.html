@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main.css" type="text/css">
+    <link rel="icon" href="img/helmet.svg" type="image">
+    <title>Go-Master</title>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul class="sidebar__wide">
+            <li class="sidebar__wide-item"><a class="sidebar__link" href="#intro-id">Introduction</a></li>
+                    <li class="sidebar__wide-item"><a class="sidebar__link"  href="#examples-id">Examples</a></li>
+                    
+                    <li class="sidebar__wide-item"><a class="sidebar__link" href="#">Contact</a></li>
+        </ul>
+        <svg class="sidebar__burger">
+            <use xlink:href="/img/burger.svg#hero">
+        </svg>
+        <div class="sidebar__open">
+            <svg class="sidebar__open-close-btn">
+                <use xlink:href= "/img/burgerclose.svg#close">
+            </svg>
+                <ul class="sidebar__items">
+                    <li class="sidebar__item "><a class="sidebar__link" href="#intro-id">Introduction</a></li>
+                    <svg class="sidebar__item-arrow">
+                        <use xlink:href="/img/arrowUp.svg#arrowUp">
+                        </svg>
+                    <li class="sidebar__item sidebar"><a class="sidebar__link"  href="#examples-id">Examples</a></li>
+                    <svg class="sidebar__item-arrow">
+                        <use xlink:href="/img/arrowUp.svg#arrowUp">
+                        </svg>
+                    <li class="sidebar__item sidebar"><a class="sidebar__link" href="#">Contact</a></li>
+                    <svg class="sidebar__item-arrow">
+                        <use xlink:href="/img/arrowUp.svg#arrowUp">
+                        </svg>
+                </ul>
+        </div>
+    </div>
+    <!-- Sidebar end -->
+
+ <!-- Header section-->
+     <section class="header">
+        <div class="header__text">
+            <div class="header__text-logo">
+                <h2 class="header__text-logo-1">Go</h2>
+                <svg class="header__text-logo-svg">
+                    <use xlink:href = "/img/helmet.svg#helmet">
+                </svg>
+                <h3 class="header__text-logo-2">Master</h3>
+            </div>
+            <div class="header__text-title">
+                <h3 class="header__text-title-up">PC Build Guide</h3>
+                <h3 class="header__text-title-down">Build your next PC with Master guidance</h3>
+                <div class="header__text-title-line"></div>
+                <button class="header__text-title-button">Download</button>
+                <div class="header__text-title-direction">Brief introduction before start</div>
+                <svg class="header__text-title-arrow">
+                    <use xlink:href = "/img/arrow.svg#arrow">
+                </svg>
+            </div>
+        </div>
+        <div class="header__image"><img src="/img/hero.png" alt="hero" class="header__image-img"><div>
+     </section>
+  <!--Header section end-->
+
+<!-- Intro -->
+<section class="section intro" id="intro-id">
+    <div class="intro__text">
+        <h2 class="intro__text-main">What should you know before you start building your pc?</h2>
+        <h3 class="intro__text-sub">Your build should be consisted of mandatory parts and, per your preference, additional parts.
+            Below we’ve mentioned both. Because this is just a brief overview of components, don’t worry about the final solution. That is exactly what we will figure out in the app.</h3>
+    </div>
+    <div class="intro__line"></div>
+
+    <div class="parts">
+
+        <div class="part">
+            <svg class="part__svg">
+                <use xlink:href="/img/cpu.svg#processor">
+            </svg>
+            <h5 class="part__name">CPU</h5>
+            <p class="part__description">Calculates everything in your system. Having a good cpu will get you far. Wide range of options available from <span>AMD</span> and <span>Intel</span></p>
+        </div>
+        <div class="part">
+            <svg class="part__svg">
+                <use xlink:href="/img/motherboard.svg#mobo">
+            </svg>
+            <h5 class="part__name">Motherboard</h5>
+            <p class="part__description">Connects and manages all other components onto itself. Should be careful about compatibility when choosing one</p>
+        </div>
+        <div class="part">
+            <svg class="part__svg">
+                <use xlink:href="/img/gpu.svg#gpu">
+            </svg>
+            <h5 class="part__name">GPU</h5>
+            <p class="part__description">Comes in two shapes. Integrated and discrete. Processes any visuals and outputs to monitor. No matter your budget, there should be room for a gpu.</p>
+        </div>
+        <div class="part">
+            <svg class="part__svg">
+                <use xlink:href="/img/ram.svg#ram">
+            </svg>
+            <h5 class="part__name">RAM</h5>
+            <p class="part__description">Stores CPU data and reads/writes it very fast on a temporary basis. That means once your PC is shut down all the data is lost. It is also very common to have 2 or more kits. Depending on your needs</p>
+        </div>
+        <div class="part">
+            <svg class="part__svg">
+                <use xlink:href="/img/ssd.svg#ssd">
+            </svg>
+            <h5 class="part__name">HDD/SSD</h5>
+            <p class="part__description">Retains all used data on our system. Compared to HDD, SSD reads data much faster and is becoming a new standard. Hint: Combination of both is not excluded</p>
+        </div>
+        <div class="part">
+            <svg class="part__svg">
+                <use xlink:href="/img/psu.svg#psu">
+            </svg>
+            <h5 class="part__name">PSU</h5>
+            <p class="part__description">Charges the whole system. Keeping an eye on the ratio of wattage needed and supplied is most important here  </p>
+        </div>
+        <div class="part">
+            <svg class="part__svg">
+                <use xlink:href="/img/case.svg#case">
+            </svg>
+            <h5 class="part__name">Case</h5>
+            <p class="part__description">Keep it all in one place and clean with more functionalities. Be sure your setup has room to breath in it</p>
+        </div>
+        <div class="part">
+            <svg class="part__svg">
+                <use xlink:href="/img/cooler.svg#cooler">
+            </svg>
+            <h5 class="part__name">CPU Cooler</h5>
+            <p class="part__description">Your temperatures play important role and keeping them in check is easier with direct cooling on to CPU</p>
+        </div>
+    </div>
+
+    <div class="outro__line"></div>
+
+    <div class="additional-title">Additional parts</div>
+
+    <div class="section additional-parts">
+        <div class="add">
+            <svg class="add__svg">
+                <use xlink:href="/img/monitor.svg#monitor">
+            </svg>
+            <h5 class="add__name">Monitor</h5>
+            <p class="add__description">PC can be output to different displays, although for best performance monitor is recommended. </p>
+        </div>
+        <div class="add">
+            <svg class="add__svg">
+                <use xlink:href="/img/mouse.svg#mouse">
+            </svg>
+            <h5 class="add__name">M&K</h5>
+            <p class="add__description">Mouse and keyboard is a common purchase with new built, but you might skip this one if you are already equipped</p>
+        </div>
+        <div class="add">
+            <svg class="add__svg">
+                <use xlink:href="/img/speakers.svg#speakers">
+            </svg>
+            <h5 class="add__name">Speakers</h5>
+            <p class="add__description">Going with monitor means you will be in a need of better speakers, since built in ones are not competitive</p>
+        </div>
+        <div class="add">
+            <svg class="add__svg">
+                <use xlink:href="/img/dvd.svg#dvd">
+            </svg>
+            <h5 class="add__name">DVD/Blu-Ray</h5>
+            <p class="add__description">You might consider it in case you have physical collection of DVDs ready to be played</p>
+        </div>
+    </div>
+
+    <div class="outro__line"></div>
+    <div class="advantages--title">Advantages of our app</div>
+
+    <!-- Tabbed component -->
+    <div class="advantages">
+        <div class="adv-buttons">
+            <button class="adv-buttons--btn adv-buttons--1 adv-buttons--active" data-tab="1">I. Simplistic design</button>
+            <button class="adv-buttons--btn adv-buttons--2" data-tab="2">II. Quick response</button>
+            <button class="adv-buttons--btn adv-buttons--3" data-tab="3">III. Latest products</button>
+        </div>
+    
+            <div class="advantages--description advantages--description-1 advantages--description-active">
+                Simplistic design is dolor sit amet consectetur adipisicing elit. Doloremque sapiente blanditiis odio cupiditate quos quisquam necessitatibus quam qui inventore facere non ipsum reprehenderit ea vel, dolorum saepe sit tempora neque?
+                <div class="advantages--description-line advantages--description-line-1 advantages--description-line--active"></div>
+            </div>
+            <div class="advantages--description advantages--description-2">
+                Quick response is dolor sit amet consectetur adipisicing elit. Doloremque sapiente blanditiis odio cupiditate quos quisquam necessitatibus quam qui inventore facere non ipsum reprehenderit ea vel, dolorum saepe sit tempora neque?
+                <div class="advantages--description-line advantages--description-line-2"></div>
+            </div>
+            
+            <div class="advantages--description advantages--description-3">
+                Latest products are dolor sit amet consectetur adipisicing elit. Doloremque sapiente blanditiis odio cupiditate quos quisquam necessitatibus quam qui inventore facere non ipsum reprehenderit ea vel, dolorum saepe sit tempora neque?
+                <div class="advantages--description-line  advantages--description-line-3"></div>
+            </div>
+            
+        </div>
+       <!-- End of tabbed component -->
+</section>
+<!-- Intro end -->
+
+<!-- Examples -->
+<section class="section examples" id="examples-id">
+    <h3 class="examples__title">Now that you know what you need, it is time to play around with components in the app.<br>
+        In case you feel lost with all the available components you can choose one of the bellow approaches. This way you can have better idea of what to look for.</h3>
+
+        <div class="configs">
+            <div class="build">
+                <h3 class="build__title"><span class="amd">AMD</span></h3>
+               <img src="/img/amd.png" alt="pc case" class="build__img build__img-1">
+                <div class="build__line build__line-1"></div>
+                <p>CPU: Ryzen 5 3600<br>
+                    MB: MSI B450-A PRO<br>
+                    GPU: Radeon RX580 8GB<br>
+                    RAM: Crucial Ballistix 16 GB<br>
+                    HDD: WD 1TB SATA 6gb/s<br>
+                    SSD: WD 240GB SATA III <br>
+                    PSU: Thermaltake 550W<br>
+                    CASE: ZALMAN R2 BLACK <br>
+                    CPU COOLER: Xilence A404T<br>
+                     </p>
+            </div>
+            <div class="build">
+                <h3 class="build__title"><span class="nvidia">Nvidia</span> & <span class="intel">Intel</span></h3>
+               <img src="/img/Nvidia2.png" alt="pc case" class="build__img">
+                <div class="build__line build__line-2"></div>
+                <p>CPU: i5 10400F<br>
+                    MB:  GIGABYTE Intel LGA1200<br>
+                    GPU: RTX 3060 12GB<br>
+                    RAM: Crucial Ballistix 16 GB<br>
+                    HDD: WD 1TB SATA 6gb/s<br>
+                    SSD: WD 240GB SATA III <br>
+                    PSU: Thermaltake 550W<br>
+                    CASE: ZALMAN R2 BLACK <br>
+                    CPU COOLER: Xilence A404T<br>
+                     
+                     </p>
+            </div>
+            <div class="build">
+                <h3 class="build__title"><span class="alternate">Alternate</span></h3>
+                <img src="/img/Alternate.png" alt="pc case" class="build__img">
+                <div class="build__line build__line-3"></div>
+                <p>CPU: Ryzen 5 3600<br>
+                    MB: MSI B450-A PRO<br>
+                    GPU: RTX 2060 6GB<br>
+                    RAM: Crucial Ballistix 16 GB<br>
+                    HDD: WD 1TB SATA 6gb/s<br>
+                    SSD: WD 240GB SATA III <br>
+                    PSU: Thermaltake 550W<br>
+                    CASE: ZALMAN R2 BLACK <br>
+                    CPU COOLER: Xilence A404T  <br>                  
+                     </p>
+            </div>
+        </div>
+
+        <div class="ending">
+            <div class="ending__text">Now that you have an idea of how it works, try it  yourself with our free app</div>
+       
+        <button class="ending__button">Try Now</button>
+    </div>
+</section>
+<!-- Examples end -->
+
+<!-- Footer-->
+<section class="footer">
+        <ul class="options">
+            <li class="options__item"><a class="options__link" href="#">About</a></li>
+            <li class="options__item"><a class="options__link" href="#">Home</a></li>
+            <li class="options__item"><a class="options__link" href="#">Contact</a></li>
+        </ul>
+</section>
+<!-- Footer end -->
+<script src="script.js"></script>
+</body>
+</html>

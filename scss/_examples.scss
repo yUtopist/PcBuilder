@@ -1,0 +1,157 @@
+.examples {
+    grid-column: content-start / content-end;
+
+    &__title {
+            margin: 8rem 0;
+            letter-spacing: .3rem;
+            font-size: 2.4rem;
+            font-weight: lighter;
+            text-align: center;
+            line-height: 2;
+    }
+}
+
+.configs {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    // column-gap: 5rem;
+    
+    // @media only screen and (max-width: 1010px) {
+    //     grid-template-columns: repeat(auto-fit, minmax(rem, 1fr));
+    // }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    @media only screen and (max-width: 1000px) {
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+}
+
+.build {
+    // display: grid;
+    // align-items: center;
+    // justify-items: center;
+    // text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5rem;
+
+    &__img {
+        background-size: cover;
+        width: 25vw;
+        height: 25vh;
+
+        @media only screen and (max-width: 900px) {
+            width: 40vw;
+        }
+        @media only screen and (max-width: 550px) {
+            width: 40vw;
+            height: 15vh;
+        }
+
+        &-1 {
+            width: 16vw;
+
+            @media only screen and (max-width: 900px) {
+                width: 30vw;
+            }
+        }
+    }
+
+    &__line {
+        width: 10rem;
+        height: .3rem;
+        margin: 10rem 0;
+
+        &:hover {
+            height: 10rem;
+            box-shadow: 0 1px 30px inherit;
+        }
+
+        &-1 {
+            background: red;
+            box-shadow: 0 0 .8rem red;
+            }
+        
+
+        &-2 {
+            background: green;
+            box-shadow: 0 0 .8rem green;
+            transition: .2s;
+        }
+
+        &-3 {
+            background: pink;
+            box-shadow: 0 0 .8rem pink;
+        }
+        
+    }
+
+    &__title {
+        font-size: 2.7rem;
+        letter-spacing: .8rem;
+        margin-bottom: 6rem;
+        font-weight: lighter;
+
+        @media only screen and (max-width: 900px) {
+            font-size: 2.2rem;
+        }
+        @media only screen and (max-width: 550px) {
+            font-size: 4rem;
+        }
+    }
+
+    & p {
+        font-size: 1.5rem;
+        letter-spacing: .2rem;
+        margin-bottom: 6rem;
+        line-height: 2.5;
+
+        @media only screen and (max-width: 905px) {
+            font-size: 1.3rem;
+        }
+        @media only screen and (max-width: 550px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    .nvidia {
+        color: green;
+    }
+
+    .intel {
+        color: #449ED0;
+    }
+
+    .alternate {
+        color: pink;
+    }
+    
+    .amd {
+        color: red;
+    }
+}
+
+.ending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        letter-spacing: .3rem;
+        font-size: 2.4rem;
+        letter-spacing: 2;
+        text-align: center;
+    }
+
+    &__button {
+        @include button;
+    }
+}

@@ -1,2 +1,2 @@
 # PcBuilder
- Learn and build your new PC
+ Build your new PC
